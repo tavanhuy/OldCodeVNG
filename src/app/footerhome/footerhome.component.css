@@ -1,0 +1,170 @@
+.footerhome{
+    padding-top: 10px;
+    border-top: 4px solid #9500d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-footer{
+    /* background-color: white;
+    width: 75%;
+    max-width: 100%;
+    margin: 0 auto; */
+    /* margin-left: 18%; */
+    max-width: 1200px;
+    width: 100%;
+    padding: 0px;
+}
+
+/* .col-address{
+    margin-right: 30px;
+} */
+.grid-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-address{
+    margin-right: 30px;
+}
+.contact{
+    margin-right: 30px;
+}
+
+/* .grid-support{
+    width: 30%;
+} */
+.footer-heading{
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #5c2e91;
+}
+
+.footer-list{
+    padding-left: 0px;
+    list-style: none;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+.footer-list-item,
+.footer-item-link{
+    display: block;
+    padding: 5px 0px;
+    font-size: 17px;
+    color: rgb(148, 148, 148);
+    font-weight: 600;
+}
+
+.footer-item-link:hover{
+    color: #9500d1;
+}
+
+.footer-item-link{
+    display: inline-block;
+}
+
+.zaloicon{
+    vertical-align: middle;
+}
+.Copyright{
+    text-align: center;
+    background-color: #9500d1;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+.icon-zalo{
+    margin-right: 9px;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.icon-facebook{
+    margin-left: 5px;
+    font-size: 27px;
+    vertical-align: middle;
+    margin-right: 12px;
+    color: #9500d1;
+}
+
+/* .icon-phone{
+    font-size: 20px;
+    margin-right: 12px;
+    margin-left: 5px;
+    color: #9500d1;
+    vertical-align: middle;
+} */
+
+.icon-email{
+    color: #9500d1;
+    margin-left: 5px;
+    font-size: 25px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.icon-web{
+    color: #9500d1;
+    font-size: 25px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.info-address{
+    color:#5c2e91;
+    font-size: 17px;
+}
+.row-address{
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    width: 250px;
+}
+
+@media (max-width: 1680px){
+    /* .grid-logo-address{
+        width: 30%;
+    } */
+
+
+    .img-logo{
+        width: 200px;
+    }
+
+    .info-address{
+        font-size: 15px;
+    }
+
+    .icon-web{
+        font-size: 23px;
+        margin-right: 9px;
+    }
+
+    .icon-facebook{
+        font-size: 25px;
+        margin-right: 11px;
+    }
+
+    .icon-email{
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .footer-list-item,
+    .footer-item-link{
+        font-size: 15px;
+    }
+}

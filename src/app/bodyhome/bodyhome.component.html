@@ -1,0 +1,398 @@
+<app-headerhome></app-headerhome>
+
+<section class="body-home-page">
+  <div class="menu-bar">
+    <div class="row-menu h-100">
+      <ul class="menu-list">
+        <li class="menu-type-item">
+          Danh mục tủ sách
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Trang chủ</a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Giới thiệu</a>
+        </li>
+        <li class="menu-item" (mouseenter)="onMouseEnter2()" (mouseleave)="onMouseLeave2()">
+          <a href="" class="menu-link">Sản phẩm khác</a>
+          <i class="fa-solid fa-chevron-down icon-down"></i>
+          <ul class="dropdown_menu" *ngIf="showDropDownMenu2">
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Bút chì màu - bút Lông màu - sáp Màu</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Lưu niệm - Quà tặng</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item menu" (mouseenter)="onMouseEnter1()" (mouseleave)="onMouseLeave1()">
+          <a href="" class="menu-link">Hổ trợ</a>
+          <i class="fa-solid fa-chevron-down icon-down"></i>
+          <ul class="dropdown_menu" *ngIf="showDropDownMenu1">
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Hướng dẫn đặt hàng</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Phương thức thanh toán</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Phương thức vận chuyển</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Chính sách đổi trả</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Chính sách bảo mật</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Điều khoản sử dụng</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Tuyển dụng</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row-swiper-news h-100">
+    <div class="menu-bar">
+      <!-- <ul class="menu-list" style="gap: 50px;">
+        <li class="menu-type-item">
+          Danh mục tủ sách
+        </li>
+
+        <li class="menu-item">
+          <a href="" class="menu-link">Trang chủ</a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Giới thiệu</a>
+        </li>
+        <li class="menu-item" (mouseenter)="onMouseEnter2()" (mouseleave)="onMouseLeave2()">
+          <a href="" class="menu-link">Sản phẩm khác</a>
+          <i class="fa-solid fa-chevron-down icon-down"></i>
+          <ul class="dropdown_menu" *ngIf="showDropDownMenu2">
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Bút chì màu - bút Lông màu - sáp Màu</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Lưu niệm - Quà tặng</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item menu" (mouseenter)="onMouseEnter1()" (mouseleave)="onMouseLeave1()">
+          <a href="" class="menu-link">Hổ trợ</a>
+          <i class="fa-solid fa-chevron-down icon-down"></i>
+          <ul class="dropdown_menu" *ngIf="showDropDownMenu1">
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Hướng dẫn đặt hàng</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Phương thức thanh toán</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Phương thức vận chuyển</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Chính sách đổi trả</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Chính sách bảo mật</a>
+            </li>
+            <li class="dropdown_menu-item">
+              <a class="dropdown_menu-item-link" href="">Điều khoản sử dụng</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Tuyển dụng</a>
+        </li>
+
+      </ul> -->
+    </div>
+    <div class="swiper-menu">
+      <ul class="dropdown_menu_type">
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách nghệ thuật sống - Tâm lý</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách văn học Việt Nam</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách văn học nước ngoài</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách thiếu nhi</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách giáo dục - Gia đình</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách lịch sử</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách văn hóa - Nghệ thuật</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách khoa học - Triết học</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách tâm linh - Tôn giáo</a>
+        </li>
+        <li class="dropdown_menu-item">
+          <a class="dropdown_menu-item-link" href="">Sách y học - Thực dưỡng</a>
+        </li>
+      </ul>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let img of swiperImg">
+            <img style="width: 100%;height: 100%;" [src]="img" alt="SwiperImage" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="promotion">
+    <div class="row-homepage grid-books">
+      <div class="promotion-title">
+        <p class="promo-title-item">FLASH SALE</p>
+        <a href="" class="title-more">Xem thêm</a>
+      </div>
+
+      <!-- 1020px - 4 sách -->
+      <!-- 650px - 3 sách -->
+      <div class="grid-row">
+        <div class="promotion-book">
+          <img class="img-book" src="assets/book2.jpeg" alt="">
+          <div class="info-book-promotion">
+            <a href="" class="name-book"> Siêu trộm quân tử</a>
+            <div>
+              <p class="cost-book-promotion"> 50 000 VNĐ</p>
+              <p class="discount-value">50%</p>
+            </div>
+            <p class="cost-discount-book"> 100 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="promotion-book">
+          <img class="img-book" src="assets/book2.jpeg" alt="">
+          <div class="info-book-promotion">
+            <a href="" class="name-book"> Siêu trộm quân tử</a>
+            <div>
+              <p class="cost-book-promotion"> 50 000 VNĐ</p>
+              <p class="discount-value">50%</p>
+            </div>
+            <p class="cost-discount-book"> 100 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="promotion-book">
+          <img class="img-book" src="assets/book2.jpeg" alt="">
+          <div class="info-book-promotion">
+            <a href="" class="name-book"> Siêu trộm quân tử</a>
+            <div>
+              <p class="cost-book-promotion"> 50 000 VNĐ</p>
+              <p class="discount-value">50%</p>
+            </div>
+            <p class="cost-discount-book"> 100 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="promotion-book">
+          <img class="img-book" src="assets/book2.jpeg" alt="">
+          <div class="info-book-promotion">
+            <a href="" class="name-book"> Siêu trộm quân tử</a>
+            <div>
+              <p class="cost-book-promotion"> 50 000 VNĐ</p>
+              <p class="discount-value">50%</p>
+            </div>
+            <p class="cost-discount-book"> 100 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="promotion-book">
+          <img class="img-book" src="assets/book2.jpeg" alt="">
+          <div class="info-book-promotion">
+            <a href="" class="name-book"> Siêu trộm quân tử</a>
+            <div>
+              <p class="cost-book-promotion"> 50 000 VNĐ</p>
+              <p class="discount-value">50%</p>
+            </div>
+            <p class="cost-discount-book"> 100 000 VNĐ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 1020px - 4 sách -->
+  <!-- 650px - 3 sách -->
+  <!-- Điều chỉnh responsive : 1180px (Nội dung), 1020px (Kích thước mỗi ô), 768px (nội dung), 720px (Kích thước mỗi ô và nội dung) -->
+  <!-- 650px (kích thước mỗi ô), 580px (kích thước mỗi ô), 500px (Nội dung) -->
+  <div class="book-type">
+    <div class=" row-homepage grid-books">
+      <div class="title">
+        <p class="title-item">Sách Tiếng Việt</p>
+        <a href="" class="title-more">Xem thêm</a>
+      </div>
+
+      <div class="grid-row">
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengViet.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book"> Chuyện cổ tích của vườn</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengViet.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book"> Chuyện cổ tích của vườn</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengViet.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book"> Chuyện cổ tích của vườn</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengViet.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book"> Chuyện cổ tích của vườn</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengViet.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book"> Chuyện cổ tích của vườn</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1020px - 4 sách -->
+  <!-- 650px - 3 sách -->
+  <div class="book-type">
+    <div class="row-homepage grid-books">
+      <div class="title">
+        <p class="title-item">Sách Tiếng Anh</p>
+        <a href="" class="title-more">Xem thêm</a>
+      </div>
+
+      <div class="grid-row">
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengAnh.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book">The Apothecary Diaries 3</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengAnh.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book">The Apothecary Diaries 3</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengAnh.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book">The Apothecary Diaries 3</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengAnh.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book">The Apothecary Diaries 3</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+        <div class="books">
+          <img class="img-book" src="assets/SachTiengAnh.jpg" alt="">
+          <div class="info-book">
+            <a href="" class="name-book">The Apothecary Diaries 3</a>
+            <p class="cost-book"> 50 000 VNĐ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <div class="news">
+    <div class="row-homepage grid-books">
+      <div class="news-title">
+        <p class="news-title-item">TIN TỨC</p>
+        <a href="" class="title-more">Xem thêm</a>
+      </div>
+      <div class="news-item">
+        <div class="grid-news-row" *ngIf="newflag">
+          <div style="width: 70%;" class="grid-news-row">
+            <img class="new-news-img" src="{{newNews.imgNews.formats.thumbnail.url}}" alt="">
+            <div class="new-news">
+              <p class="news-name">{{newNews.Title}}</p>
+              <p class="news-content" [innerHTML]="newNews.Content"></p>
+            </div>
+          </div>
+
+
+          <div style="width: 30%;">
+            <div class="grid-news-row-list" *ngFor="let new of sortNews">
+              <img style="width: 40%;" class="news-img" src="{{new.imgNews.formats.thumbnail.url}}" alt="">
+              <div style="width: 50%;">
+                <p class="news-name">{{new.Title}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="news">
+    <div class="row-homepage grid-books">
+      <div class="news-title">
+        <p class="news-title-item">TIN TỨC</p>
+        <a href="" class="title-more">Xem thêm</a>
+      </div>
+      <div class="news-item" *ngIf="newflag">
+        <!-- <div class="grid-news-row"> -->
+        <div class="main-new">
+          <img class="new-news-img" src="{{newNews.imgNews.formats.thumbnail.url}}" alt="">
+          <div class="new-news">
+            <p class="news-name">{{newNews.Title}}</p>
+            <p class="news-content" [innerHTML]="newNews.Content"></p>
+          </div>
+        </div>
+
+
+        <div class="site-new">
+          <div class="grid-news-row-list" *ngFor="let new of sortNews">
+            <img class="news-img" src="{{new.imgNews.formats.thumbnail.url}}" alt="">
+            <div class="site-news-title">
+              <p class="news-name">{{new.Title}}</p>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<app-footerhome></app-footerhome>
